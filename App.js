@@ -6,6 +6,7 @@ import ListScreen from "./src/screens/ListScreen";
 import ImageScreen from "./src/screens/ImageScreen";
 import CounterScreen from "./src/screens/CounterScreen";
 import ColourScreen from "./src/screens/ColourScreen";
+import ColourPickerScreen from "./src/screens/ColourPickerScreen";
 
 // Decides what is shown on the screen
 // The key is the name of the route
@@ -19,7 +20,8 @@ const navigator = createStackNavigator(
     List: ListScreen,
     Image: ImageScreen,
     Counter: CounterScreen,
-    Colour: ColourScreen
+    Colour: ColourScreen,
+    ColourPicker: ColourPickerScreen,
   },
   {
     initialRouteName: "Home",
