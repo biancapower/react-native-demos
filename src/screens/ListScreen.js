@@ -18,6 +18,11 @@ const ListScreen = () => {
     <View>
       <Text>List Screen</Text>
       <FlatList
+        // change scroll direction to horizontal
+        horizontal
+        // hide scroll bar
+        showsHorizontalScrollIndicator={false}
+
         // keyExtractor is a function that returns a unique key for each element in the array
         keyExtractor={friend => friend.name}
 
