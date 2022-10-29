@@ -1,15 +1,18 @@
 import React from "react";
 import { View, StyleSheet, Text, Button } from "react-native";
 
-const ColourPickerDetail = ({ colour }) => {
+const ColourPickerDetail = ({ colour, onIncrease, onDecrease }) => {
   return (
     <View>
       <Text>{colour}</Text>
       <Button
         title={`More ${colour}`}
-        // onPress={() => {
+        onPress={() => onIncrease()}
       />
-      <Button title={`Less ${colour}`} />
+      <Button
+        title={`Less ${colour}`}
+        onPress={() => onDecrease()}
+      />
     </View>
   );
 }
