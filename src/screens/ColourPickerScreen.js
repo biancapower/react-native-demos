@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 import ColourPickerDetail from "../components/ColourPickerDetail";
 
 const COLOUR_INCREMENT = 25;
@@ -26,6 +26,12 @@ const ColourPickerScreen = () => {
         onIncrease={() => setBlue(blue + COLOUR_INCREMENT)}
         onDecrease={() => setBlue(blue - COLOUR_INCREMENT)}
       />
+      <View style={{
+        height: 100,
+        width: 100,
+        backgroundColor: `rgb(${red},${green},${blue})` }}
+      />
+      <Text>RGB: {red}, {green}, {blue}</Text>
     </View>
   );
 };
