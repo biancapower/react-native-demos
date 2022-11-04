@@ -8,6 +8,7 @@ import CounterScreen from "./src/screens/CounterScreen";
 import CounterScreen2 from "./src/screens/CounterScreen2";
 import ColourScreen from "./src/screens/ColourScreen";
 import ColourPickerScreen from "./src/screens/ColourPickerScreen";
+import TextScreen from "./src/screens/TextScreen";
 
 // Decides what is shown on the screen
 // The key is the name of the route
@@ -24,6 +25,7 @@ const navigator = createStackNavigator(
     Counter2: CounterScreen2,
     Colour: ColourScreen,
     ColourPicker: ColourPickerScreen,
+    Text: TextScreen,
   },
   {
     initialRouteName: "Home",
