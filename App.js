@@ -5,6 +5,7 @@ import ComponentsScreen from "./src/screens/ComponentsScreen";
 import ListScreen from "./src/screens/ListScreen";
 import ImageScreen from "./src/screens/ImageScreen";
 import CounterScreen from "./src/screens/CounterScreen";
+import CounterScreen2 from "./src/screens/CounterScreen2";
 import ColourScreen from "./src/screens/ColourScreen";
 import ColourPickerScreen from "./src/screens/ColourPickerScreen";
 
@@ -20,6 +21,7 @@ const navigator = createStackNavigator(
     List: ListScreen,
     Image: ImageScreen,
     Counter: CounterScreen,
+    Counter2: CounterScreen2,
     Colour: ColourScreen,
     ColourPicker: ColourPickerScreen,
   },
