@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Text, StyleSheet, View, TextInput } from "react-native";
 
 const TextScreen = () => {
+  const [name, setName] = useState("");
+
   return (
     <View>
       <TextInput
@@ -11,7 +13,13 @@ const TextScreen = () => {
         // handle iOS things
         autoCapitalize="none" // none, sentences, words, characters
         autoCorrect={false}  // true, false
+
+        // update the state
+        onChangeText={(newValue) => setName(newValue)}
+        value={name}
       />
+      {/* uses state */}
+      <Text>My name is {name}</Text>
     </View>
   );
 }
